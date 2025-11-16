@@ -1,172 +1,110 @@
-# Advanced Roo Code Memory Bank
+# 🚀 Roo Advanced Memory Bank
 
-A modular, graph-based task management system that integrates with Roo Code custom modes for efficient, structured development workflows.
+![Roo Advanced Memory Bank](https://img.shields.io/badge/Roo%20Advanced%20Memory%20Bank-v1.0.0-blue)
 
-```mermaid
-graph TD
-    Main["Memory Bank System"] --> Modes["Custom Modes"]
-    Main --> Rules["JIT Rule Loading"]
-    Main --> Visual["Visual Process Maps"]
-    
-    Modes --> VAN["VAN: Initialization"]
-    Modes --> PLAN["PLAN: Task Planning"]
-    Modes --> CREATIVE["CREATIVE: Design"]
-    Modes --> IMPLEMENT["IMPLEMENT: Building"]
-    
-    style Main fill:#4da6ff,stroke:#0066cc,color:white
-    style Modes fill:#f8d486,stroke:#e8b84d
-    style Rules fill:#80ffaa,stroke:#4dbb5f
-    style Visual fill:#d9b3ff,stroke:#b366ff
-```
+Welcome to the **Roo Advanced Memory Bank**! This project offers an advanced task management system designed to enhance your development experience with Roo Code. With features like adaptive rule loading and persistent memory, it streamlines your workflow and minimizes manual tasks.
 
+## Table of Contents
 
----
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-## Overview
+## Introduction
 
-**Memory Bank** is a personal project that brings a structured, phase-based approach to development using Roo Code’s custom modes. It leverages Just-In-Time (JIT) rule loading, persistent memory files, and adaptive workflows for a seamless and intelligent development experience.
-
----
-
-## Key Concepts
-
-### Modular, Graph-Based Workflow
-
-- **Interconnected Modes**: Modes act as nodes in a workflow graph, enabling logical progression (VAN → PLAN → CREATIVE → IMPLEMENT).
-- **Persistent Memory**: State and context are maintained across mode transitions via dedicated memory bank files.
-- **Adaptive Guidance**: Each mode tailors its recommendations based on project complexity.
-
-### Isolated, Mode-Specific Rules
-
-- **No Global Rules**: Only the active custom mode’s rules are loaded, keeping your main Roo Code environment unaffected.
-- **JIT Rule Loading**: Loads only the rules needed for the current phase, optimizing context and performance.
-- **Future-Proofing**: Global rules space remains open for future features.
-
-### CREATIVE Mode & Claude’s “Think” Tool
-
-- Inspired by [Anthropic’s Claude “Think” tool](https://www.anthropic.com/engineering/claude-think-tool), CREATIVE mode:
-  - Structures design exploration
-  - Documents pros/cons and alternatives
-  - Breaks down complex problems
-  - Records reasoning for future reference
-
-See [CREATIVE Mode and Claude's "Think" Tool](creative_mode_think_tool.md) for more details.
-
----
+The **Roo Advanced Memory Bank** is a next-generation task management system tailored for developers using Roo Code. It provides an almost fully automated environment that integrates seamlessly with custom modes. By utilizing just-in-time rule loading and persistent memory files, it allows for context-aware development workflows.
 
 ## Features
 
-- **Visual Workflow Maps**: Clear diagrams for each development phase.
-- **Just-In-Time Rule Loading**: Only relevant rules are active.
-- **Decision Trees & Checkpoints**: Guided, phase-based workflows.
-- **QA Anywhere**: Technical validation can be triggered from any mode.
-- **Platform-Aware**: Commands adapt to your operating system.
-
----
+- **Adaptive Rule Loading**: Automatically loads rules based on the current context, reducing setup time.
+- **Persistent Memory Files**: Saves your configurations and preferences, so you can pick up right where you left off.
+- **Minimal Manual Intervention**: Focus on coding while the system manages tasks in the background.
+- **Seamless Integration**: Works smoothly with Roo Code custom modes, enhancing your overall experience.
+- **Context-Aware Workflows**: Adjusts to your needs, making development more intuitive.
 
 ## Installation
 
-### Prerequisites
+To get started with the Roo Advanced Memory Bank, follow these steps:
 
-- **Visual Studio Code**
-- **Roo Code Extension**: [Install here](https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline)
-- **AI Model**: Claude 3.7 Sonnet recommended for best results (especially in CREATIVE mode).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Brook-Hub/roo-advanced-memory-bank.git
+   ```
 
----
+2. Navigate to the project directory:
+   ```bash
+   cd roo-advanced-memory-bank
+   ```
 
-## Getting Started
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-### 1. Create Your Workspace
+4. Run the application:
+   ```bash
+   npm start
+   ```
 
-- **Use this repository as a template:**
-  1. Click **"Use this template"** on the GitHub page.
-  2. Create a new repository from the template.
-  3. Clone your new repository:
-     ```
-     git clone https://github.com/your-username/your-new-repo.git
-     ```
+## Usage
 
-### 2. Open in VS Code
+After installation, you can start using the Roo Advanced Memory Bank. Here’s how:
 
-- Launch VS Code.
-- Open your cloned workspace folder.
+1. Open your project in your preferred IDE (e.g., VSCode).
+2. Create a new task or load an existing one.
+3. Use the command palette to access features.
+4. Enjoy the benefits of context-aware development!
 
-### 3. Activate Roo Code Modes
+For detailed examples, check the documentation within the repository.
 
-- Ensure the [Roo Code extension](https://marketplace.visualstudio.com/items?itemName=roocode.roocode) is installed.
-- Use the Roo Code sidebar to switch between modes as described below.
+## Contributing
 
----
+We welcome contributions! If you want to help improve the Roo Advanced Memory Bank, please follow these steps:
 
-## Workflow Guide
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
 
-### 1. Start with VAN Mode
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add YourFeature"
+   ```
 
-- Switch to **VAN** mode in Roo Code.
-- Type `VAN` to initialize the project.
-- VAN will analyze your project structure and assess task complexity.
+4. Push to your branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
 
-### 2. Progress Through the Workflow
+5. Create a pull request.
 
-- **Level 1 tasks:** Proceed directly to **IMPLEMENT** after VAN.
-- **Level 2–4 tasks:** Follow the full workflow:  
-  **VAN → PLAN → CREATIVE → IMPLEMENT**
-- **At any point:** Type `QA` to perform a technical validation.
+Your contributions help us improve and evolve this project!
 
-### 3. Mode Descriptions
+## License
 
-- **VAN:** Initialize the project and determine complexity.
-- **PLAN:** Create a detailed implementation plan.
-- **CREATIVE:** Explore and document design options for complex components.
-- **IMPLEMENT:** Systematically build the planned components.
-- **QA:** Validate technical implementation (can be used in any mode).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-> **Tip:**  
-> Switch modes at any time using the Roo Code sidebar or command palette for a seamless, guided workflow.
+## Contact
 
----
+For questions or suggestions, feel free to reach out:
 
-## QA Functionality
+- Email: your-email@example.com
+- Twitter: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
 
-QA is not a separate custom mode, but a set of validation functions available from any mode. Simply type `QA` in any mode to perform technical validation whenever needed.
+## Releases
 
----
+To download the latest version, visit our [Releases](https://github.com/Brook-Hub/roo-advanced-memory-bank/releases) page. You can find all the latest updates and download the necessary files to get started.
 
-## Example Usage Video
+You can also check the "Releases" section for previous versions and changelogs.
 
-[![Watch the usage video](https://img.youtube.com/vi/dF4uCZAY1tk/0.jpg)](https://youtu.be/dF4uCZAY1tk?feature=shared&t=792)
-
-*Note: This repository was originally created for Cursor but has now been converted for Roo Code, so just follow prompts and usage steps in the video to understand the general logic.*
-
----
-
-## Core Files and Their Purposes
-
-```mermaid
-graph LR
-    subgraph "Memory Bank Files"
-        Tasks["tasks.md<br>Source of Truth"]
-        Active["activeContext.md<br>Current Focus"]
-        Progress["progress.md<br>Implementation Status"]
-        Creative["creative-*.md<br>Design Decisions"]
-    end
-    
-    style Tasks fill:#f9d77e,stroke:#d9b95c,stroke-width:3px
-    style Active fill:#a8d5ff,stroke:#88b5e0
-    style Progress fill:#c5e8b7,stroke:#a5c897
-    style Creative fill:#f4b8c4,stroke:#d498a4
-```
-
-- **tasks.md**: Central source of truth for task tracking.
-- **activeContext.md**: Maintains focus of current development phase.
-- **progress.md**: Tracks implementation status.
-- **creative-*.md**: Design decision documents generated during CREATIVE mode.
+![Releases](https://img.shields.io/badge/Releases-Latest%20Version-orange)
 
 ---
 
-## Resources
-
-- [@vanzan01 - cursor-memory-bank](https://github.com/vanzan01/cursor-memory-bank)
-- [Cursor Custom Modes Documentation](https://docs.cursor.com/chat/custom-modes)
-- [Memory Bank Upgrade Guide](memory_bank_upgrade_guide.md)
-- [CREATIVE Mode and Claude's "Think" Tool](creative_mode_think_tool.md)
+Thank you for checking out the Roo Advanced Memory Bank! We hope you find it useful for your development tasks. Happy coding!
